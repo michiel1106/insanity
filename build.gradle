@@ -1,20 +1,10 @@
-buildscript {
-    repositories {
-        maven { url = 'https://maven.minecraftforge.net/' }
-        maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
-    }
-    dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
-        classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
-    }
-}
 
 
 plugins {
     id 'eclipse'
     id 'idea'
     id 'maven-publish'
-    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+    id 'net.minecraftforge.gradle' version '[6.0.16,6.2)'
     id 'org.spongepowered.mixin' version '0.7.+'
 }
 
@@ -159,7 +149,6 @@ dependencies {
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
 
-    implementation fg.deobf("curse.maven:sanity-descent-into-madness-876448:4625236")
     implementation 'org.spongepowered:mixin:0.8.5'
 
     // Example mod dependency using a mod jar from ./libs with a flat dir repository

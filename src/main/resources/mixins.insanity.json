@@ -9,6 +9,8 @@
     "ScreenMixin"
   ],
   "mixins": [
+    "AbstractContainerScreenMixin",
+    "ScreenMixin"
 
 
   ],
